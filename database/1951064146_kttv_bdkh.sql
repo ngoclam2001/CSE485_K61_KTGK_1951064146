@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 09, 2022 at 09:50 AM
+-- Generation Time: Jan 09, 2022 at 11:41 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_duan`
+-- Database: `1951064146_kttv_bdkh`
 --
 
 -- --------------------------------------------------------
@@ -41,9 +41,10 @@ CREATE TABLE `duan` (
 --
 
 INSERT INTO `duan` (`maduan`, `tenduan`, `namthuchien`, `linhvuc`, `nhiemvu`, `coquanthuchien`) VALUES
-(1, 'Vấn đề ô nhiễm môi trường', 2015, 'Môi trường', 'Xử lý vấn đề ô nhiễm môi trường', 'Trung tâm xử lý rác thải'),
+(1, 'Vấn đề ô nhiễm môi trường', 2020, 'Môi trường', 'Xử lý vấn đề ô nhiễm môi trường', 'Trung tâm xử lý rác thải'),
 (2, 'Vấn đề ô nhiễm nguồn nước', 2015, 'Môi trường', 'Xử lý vấn đề ô nhiễm nguồn nước', 'Trung tâm xử lý nguồn nước'),
-(3, 'Vấn đề vệ sinh an toàn thực phẩm', 2015, 'Thực phẩm', 'Xử lý vấn đề vệ sinh an toàn thực phẩm', 'Trung tâm vệ sinh an toàn thực phẩm');
+(3, 'Vấn đề vệ sinh an toàn thực phẩm', 2015, 'Thực phẩm', 'Xử lý vấn đề vệ sinh an toàn thực phẩm', 'Trung tâm vệ sinh an toàn thực phẩm'),
+(4, 'Xây chung cư cao cấp', 2019, 'Xây dựng', 'Xây dựng chung cư cao cấp', 'Bộ xây dựng');
 
 --
 -- Indexes for dumped tables
@@ -63,7 +64,7 @@ ALTER TABLE `duan`
 -- AUTO_INCREMENT for table `duan`
 --
 ALTER TABLE `duan`
-  MODIFY `maduan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `maduan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
