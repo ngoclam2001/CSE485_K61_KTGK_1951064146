@@ -32,20 +32,19 @@
             $error = '';
             if (isset($_POST['submit'])) {
                 $name = $_POST['txtName'];
-                $sex = $_POST['txtSex'];
-                $age = $_POST['txtAge'];
-                $group = $_POST['txtGroup'];
-                $date = $_POST['txtDate'];
-                $phone = $_POST['txtPhone'];
+                $year = $_POST['txtYear'];
+                $linhvuc = $_POST['txtLinhVuc'];
+                $nhiemvu = $_POST['txtNhiemVu'];
+                $coquanthuchien = $_POST['txtCQTH'];
+
                 
                 $blood = new Blood();
                 $bloodArr = [
                     'name' => $name,
-                    'sex' => $sex,
-                    'age' => $age,
-                    'group' => $group,
-                    'date' => $date,
-                    'phone' => $phone
+                    'year' => $year,
+                    'linhvuc' => $linhvuc,
+                    'nhiemvu' => $nhiemvu,
+                    'cqth' => $coquanthuchien
                 ];
 
                 $isInsert = $blood->insert($bloodArr);
@@ -87,11 +86,10 @@
             // $error = '';
             if (isset($_POST['submit'])) {
                 $name = $_POST['txtName'];
-                $sex = $_POST['txtSex'];
-                $age = $_POST['txtAge'];
-                $group = $_POST['txtGroup'];
-                $date = $_POST['txtDate'];
-                $phone = $_POST['txtPhone'];
+                $year = $_POST['txtYear'];
+                $linhvuc = $_POST['txtLinhVuc'];
+                $nhiemvu = $_POST['txtNhiemVu'];
+                $coquanthuchien = $_POST['txtCQTH'];
                 //check validate dữ liệu
             
                 //xử lý update dữ liệu vào hệ thống
@@ -103,13 +101,11 @@
                     $bloodModel = new Blood();
             
                 $bloodArr = [
-                    'id' => $id,
                     'name' => $name,
-                    'sex' => $sex,
-                    'age' => $age,
-                    'group' => $group,
-                    'date' => $date,
-                    'phone' => $phone
+                    'namthuchien' => $year,
+                    'linhvuc' => $linhvuc,
+                    'nhiemvu' => $nhiemvu,
+                    'cqth' => $coquanthuchien
                 ];
             
 
