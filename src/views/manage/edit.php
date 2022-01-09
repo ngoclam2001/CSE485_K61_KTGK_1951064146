@@ -37,19 +37,19 @@
                         </div>
                         <div class="form-group my-3">
                             <label for="age" class="control-label">Năm thực hiện</label>							
-                            <input type="text" require name="txtSex" value="<?php echo isset($_POST['txtSex']) ? $_POST['txtSex'] : $blood['namthuchien']?>" />							
+                            <input type="text" require name="txtYear" value="<?php echo isset($_POST['txtYear']) ? $_POST['txtYear'] : $blood['namthuchien']?>" />							
                         </div>	 	
                         <div class="form-group my-3">
                             <label for="lastname" class="control-label">Lĩnh vực</label>							
-                            <input type="text" require name="txtAge" value="<?php echo isset($_POST['txtAge']) ? $_POST['txtAge'] : $blood['linhvuc']?>" />				
+                            <input type="text" require name="txtLinhVuc" value="<?php echo isset($_POST['txtLinhVuc']) ? $_POST['txtLinhVuc'] : $blood['linhvuc']?>" />				
                         </div>	
                         <div class="form-group my-3">
                             <label for="address my-3" class="control-label">Nhiệm vụ</label>							
-                            <input type="text" require name="txtGroup" value="<?php echo isset($_POST['txtGroup']) ? $_POST['txtGroup'] : $blood['nhiemvu']?>" />
+                            <input type="text" require name="txtNhiemVu" value="<?php echo isset($_POST['txtNhiemVu']) ? $_POST['txtNhiemVu'] : $blood['nhiemvu']?>" />
                         </div>
                         <div class="form-group my-3">
                             <label for="lastname" class="control-label">Cơ quan thực hiện</label>							
-                            <input type="text" require name="txtDate" value="<?php echo isset($_POST['txtDate']) ? $_POST['txtDate'] : $blood['coquanthuchien']?>" />
+                            <input type="text" require name="txtCQTH" value="<?php echo isset($_POST['txtCQTH']) ? $_POST['txtCQTH'] : $blood['coquanthuchien']?>" />
                         </div>					
                 </div>
                 <div class="modal-footer">
