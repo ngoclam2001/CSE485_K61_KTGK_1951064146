@@ -19,8 +19,8 @@
             $connection = $this->connectDb();
             //tạo và thực thi truy vấn
             $queryInsert = "INSERT INTO duan(`tenduan`, `namthuchien`, `linhvuc`, `nhiemvu`, coquanthuchien) 
-            VALUES ('{$blood['name']}', '{$blood['sex']}', '{$blood['age']}', 
-            '{$blood['group']}', '{$blood['date']}')";
+            VALUES ('{$blood['name']}', '{$blood['namthuchien']}', '{$blood['linhvuc']}', 
+            '{$blood['nhiemvu']}', '{$blood['cqth']}')";
             $isInsert = mysqli_query($connection, $queryInsert);
             $this->closeDb($connection);
 
@@ -63,8 +63,8 @@
         public function update($blood) {
           
             $connection = $this->connectDb();
-            $queryUpdate = "UPDATE duan SET `tenduan` = '{$blood['name']}', `namthuchien` = '{$blood['sex']}',  `linhvuc` = '{$blood['age']}'
-            ,  `nhiemvu` = '{$blood['group']}',  `coquanthuchien` = '{$blood['date']}' WHERE `maduan` = {$blood['id']} ";
+            $queryUpdate = "UPDATE duan SET `tenduan` = '{$blood['name']}', `namthuchien` = '{$blood['namthuchien']}',  `linhvuc` = '{$blood['linhvuc']}'
+            ,  `nhiemvu` = '{$blood['nhiemvu']}',  `coquanthuchien` = '{$blood['cqth']}' WHERE `maduan` = {$blood['id']} ";
             $isUpdate = mysqli_query($connection, $queryUpdate);
             $this->closeDb($connection);
     
