@@ -1,12 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<?php
+session_start();
+
+// http://localhost/MVC/MVC_Project_First?controller=manage&action=addd
+
+$controller = isset($_GET['controller']) ? $_GET['controller'] : 'manage';
+$action = isset($_GET['action']) ? $_GET['action'] : 'index';
+
+// echo $action;
+
+$controller = ucfirst($controller);
+$fileController = $controller . "Controller.php";
+
+$pathController = "src/controller/$fileController";
+
+if (!file_exists($pathController)) {
+    die("Trang bạn tìm không tồn tại");
+}
+
+require_once "$pathController";
+
+$classController = $controller."Controller";
+
+$object = new $classController();
+
+if (!method_exists($object, $action)) {
+    die("Phương thức $action
+     không tồn tại trong class $classController");
+}
+    $object->$action();
+?>
