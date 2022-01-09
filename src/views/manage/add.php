@@ -22,16 +22,16 @@
     <input type="text" require name="txtName" value="" class = "my-2" />
     <br />
     Năm thực hiện :
-    <input type="text" require name="txtSex" value="" class = "my-2"/>
+    <input type="text" require name="txtYear" value="" class = "my-2"/>
     <br />
     Lĩnh vực :
-    <input type="text" require name="txtAge" value="" class = "my-2"/>
+    <input type="text" require name="txtLinhVuc" value="" class = "my-2"/>
     <br />
     Nhiệm vụ :
-    <input type="text" require name="txtGroup" value="" class = "my-2"/>
+    <input type="text" require name="txtNhiemVu" value="" class = "my-2"/>
     <br />
     Cơ quan thực hiện :
-    <input type="text" require name="txtDate" value="" class = "my-2"/>
+    <input type="text" require name="txtCQTH" value="" class = "my-2"/>
     <br />
    
     <input type="submit" require name="submit" value="Save" />
